@@ -1,0 +1,16 @@
+number = input('하이픈(-)을 포함한 휴대폰 번호를 입력하세요: ')
+
+for b in number:
+    if b != '-':
+        print('%s' % b, end='') \
+
+phone=input('하이픈제외한 휴대폰번호')
+number=''
+for i in range(0,len(phone)):
+    if i == 2:
+        number = number+ (phone[2]+'-')
+    elif i == 6:
+        number = number+ (phone[6]+'-')
+    else:
+        number = number + phone[i]
+print(number)
